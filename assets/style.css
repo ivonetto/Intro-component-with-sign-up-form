@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --Poppins: 'Poppins', sans-serif;
+    --red: #FF7A7A;
+    --green: #38CB8B;
+    --blue: #5F54A4;
+    --darkBlue: #3D3B48;
+    --grayishBlue: #B8B5D3;
+}
+
+/*Reset style*/
+*{
+    font-family: var(--Poppins);
+    margin: 0;
+    padding: 0;
+}
+
+/*Config Body*/
+body{
+    background: var(--red);
+    background-image: url(/images/bg-intro-desktop.png);
+    place-items: center;
+}
+
+/*Collumn Text*/
+.header{
+    margin: 0 5rem;
+    padding-top: 10%;
+    justify-items: center;
+    color: white;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text-header{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+/*Form*/
+
+.inputs-wrapper{
+    width: 32rem;
+    justify-items: left;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-1{
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+    width: 30rem;
+    background-color: var(--blue);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.btn-p{
+    font-weight: 700;
+}
+
+.container-form{
+    background-color: white;
+    border-radius: 0.65rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-form input{
+    border-radius: 0.65rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 28rem;
+    border: 0.02rem solid var(--grayishBlue);
+    display: block;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 0.313rem;
+}
+
+.term{
+    color: var(--grayishBlue);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+
+.sub-btn input{
+    width: 30rem;
+}
+
+.submit-btn{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: var(--green);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+.terms{
+    color: var(--red);
+    font-weight: 700;
+}
+
+.terms:hover{
+    color: var(--green);
+    font-weight: 700;
+}
+
+.display-error{
+    margin-top: 0.625rem;
+    font-size: 0.625rem;
+    color: var(--red);
+}
+
+/*Footer*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: white;
+ text-decoration: none; }
+
+@media screen and (max-width:600px) {
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(/images/bg-intro-mobile.png);
+    }
+
+    .container{
+        max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header{
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .title{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .inputs-wrapper{
+        width: 90vw;
+        justify-items: left;
+        margin: 0.625rem;
+        padding: 0.625rem;
+    }
+
+    .btn-1{
+        width: 82vw;
+        font-size: 90%;
+    }
+
+    .btn-p{
+        font-size: 90%;
+    }
+
+    .container-form input{
+        width: 75vw;
+        padding: 0.625rem;
+    }
+
+    .submit-btn{
+        width: 100vw;
+        padding: 0.625rem;
+    }
+} 
